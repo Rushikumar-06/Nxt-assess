@@ -1,0 +1,76 @@
+.instructions-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  height: 80vh;
+}
+
+.instructions-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+}
+
+.instructions-card h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.instructions-card ol {
+  padding-left: 1rem;
+}
+.instructions-card li{
+    padding: 0.75rem 0.75rem;
+    color: #496387;
+}
+
+
+.start-button {
+  margin-top: 1.5rem;
+  background-color: #003366;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background-color: #0051a2;
+}
+
+.instructions-image {
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.instructions-image img {
+  width: 100%;
+  height: auto;
+  
+}
+@media screen and (max-width: 768px) {
+  .instructions-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .instructions-image {
+    order: 1; 
+    margin-top: 1.5rem;
+  }
+
+  .instructions-card {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+}
