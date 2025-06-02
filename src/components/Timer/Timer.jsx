@@ -1,5 +1,5 @@
 import React, { useState, useEffect ,useContext} from "react";
-import "./timer.css";
+import "./Timer.css";
 import { UserContext } from '../../App';
 import { Navigate } from "react-router";
 const Timer = () => {
