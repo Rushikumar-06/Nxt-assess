@@ -33,7 +33,7 @@
 }
 .option-item-image{
     width: 100%;
-    height: auto;
+
     border-radius: 8px;
     margin-top: 0.5rem;
 }
@@ -88,6 +88,7 @@
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 10px;
 }
 @media (max-width: 768px) {
  .options-list{

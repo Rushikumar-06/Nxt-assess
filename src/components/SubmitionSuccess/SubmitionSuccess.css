@@ -1,0 +1,88 @@
+/* AssessmentResult.css */
+.Submition-result-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  padding: 20px;
+}
+
+.Submition-result-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.Submition-result-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.Submition-congrats-text {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.Submition-time-text {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.Submition-highlight {
+  font-weight: 600;
+  color: #004aad;
+}
+
+.Submition-score-text {
+  font-size: 20px;
+  margin: 12px 0;
+  color: #222;
+}
+
+.Submition-score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+.Submition-reattempt-button {
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.Submition-reattempt-button:hover {
+  background-color: #003080;
+}
+
+@media (max-width: 480px) {
+  .Submition-result-card {
+    padding: 25px 15px;
+  }
+
+  .Submition-result-image {
+    max-width: 220px;
+  }
+
+  .Submition-score-text {
+    font-size: 18px;
+  }
+
+  .Submition-score {
+    font-size: 24px;
+  }
+}

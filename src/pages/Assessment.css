@@ -6,8 +6,23 @@
   height: 90vh;
 
 }
-.assessment-page-question{
+.assessment-page-question,.assessment-page-question-table{
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
+}
+@media screen and (max-width: 768px) {
+  .assessment-page {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .assessment-page-question-table{
+    margin-bottom: 1rem;
+    order: 0;
+  }
+  .assessment-page-question  {
+    margin-bottom: 1rem;
+  order: 1;
+  }
+  
 }

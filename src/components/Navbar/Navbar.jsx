@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import { useContext } from "react";
-import { UserLoginContext } from '../../App'; 
+import { UserContext } from '../../App'; 
  function  Navbar(){
-    const { setIsLoggedIn } = useContext(UserLoginContext);
+    const { setIsLoggedIn } = useContext(UserContext);
   return (
     <nav className="navbar">
       <div className="navbar-logo">

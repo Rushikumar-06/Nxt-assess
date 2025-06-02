@@ -1,7 +1,7 @@
 
 import './Login.css';
 import React, { useState ,useContext} from 'react';
-import { UserLoginContext } from '../../App'; 
+import { UserContext } from '../../App'; 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [userDetails, setUserDetails] = useState({
@@ -9,7 +9,7 @@ function Login() {
     password: ''
   });
   const [error, setError] = useState(false);
-    const { setIsLoggedIn } = useContext(UserLoginContext);
+    const { setIsLoggedIn } = useContext(UserContext);
   const  loginSubmit= async (e)=> {
     e.preventDefault();
     const { username, password } = userDetails;
