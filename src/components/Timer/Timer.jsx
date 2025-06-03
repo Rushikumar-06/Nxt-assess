@@ -3,7 +3,7 @@ import "./Timer.css";
 import { UserContext } from '../../App';
 import { Navigate } from "react-router";
 const Timer = () => {
-  const initialTime = 5; 
+  const initialTime = 600; 
   const [timeLeft, setTimeLeft] = useState(initialTime);
  
     const { setIsRunning,isRunning } = useContext(UserContext);
