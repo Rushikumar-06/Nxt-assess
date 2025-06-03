@@ -3,7 +3,7 @@ import "./Timer.css";
 import { UserContext } from '../../App';
 import { Navigate } from "react-router";
 const Timer = () => {
-  const initialTime = 600; 
+  const initialTime = 5; 
   const [timeLeft, setTimeLeft] = useState(initialTime);
  
     const { setIsRunning,isRunning } = useContext(UserContext);
@@ -15,7 +15,6 @@ const Timer = () => {
         if (prev <= 1) {
           clearInterval(timer);
           setIsRunning(false);
-          setTimeTaken(initialTime - 0); 
           return 0;
         }
         return prev - 1;
@@ -31,8 +30,7 @@ const Timer = () => {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
   if (timeLeft === 0) {
-    setTimeTaken(initialTime - 0); 
-    return <Navigate to="/assessment/success" replace />;
+    return <Navigate to="/assessment/timeup" replace />;
   }
   return (
       <div className="timer-time">{formatTime(timeLeft)}</div>

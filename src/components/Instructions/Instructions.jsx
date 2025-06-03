@@ -16,7 +16,7 @@ function Instructions() {
         <Link to={"/assessment"}><button className="start-button">Start Assessment</button></Link>
       </div>
       <div className="instructions-image">
-        <img src="/assessment.png" alt="Assessment Instructions" />
+        <img src="https://res.cloudinary.com/dnefyrorp/image/upload/v1748923247/Group_tonjjd.png" alt="Assessment Instructions" />
       </div>
     </div>
   );

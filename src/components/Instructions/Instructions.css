@@ -66,11 +66,17 @@
   .instructions-image {
     order: 1; 
     margin-top: 1.5rem;
+    
   }
-
+  .instructions-image img {
+  width: 70%;
+  
+  margin-top: 15%;
+}
   .instructions-card {
     order: 2;
     width: 100%;
     max-width: 100%;
   }
+
 }

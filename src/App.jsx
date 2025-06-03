@@ -9,9 +9,10 @@ import SubmitionSuccess from './components/SubmitionSuccess/SubmitionSuccess';
 import SubmitionFail from './components/SubmitionFail/SubmitionFail';
 import './App.css';
 export const UserContext = createContext();
-localStorage.setItem("isLoggedIn", false);
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn"));
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    return localStorage.getItem("isLoggedIn") === "true";
+  });
   const [selectedOptionDetails, setSelectedOptionDetails] = useState([]);
    const [isRunning, setIsRunning] = useState(true);
    useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/assessment" element={<AssessmentPage />} />
           <Route path="/assessment/success" element={<SubmitionSuccess />} />
-          <Route path="/assessment/fail" element={<SubmitionFail />} />
+          <Route path="/assessment/timeup" element={<SubmitionFail />} />
         </Route>
         <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />}/>
         

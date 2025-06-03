@@ -2,7 +2,9 @@
 import './Login.css';
 import React, { useState ,useContext} from 'react';
 import { UserContext } from '../../App'; 
+
 function Login() {
+  
   const [showPassword, setShowPassword] = useState(false);
   const [userDetails, setUserDetails] = useState({
     username: '',
@@ -46,12 +48,10 @@ function Login() {
     <div className="login-container">
       <form className="login-card" onSubmit={loginSubmit}>
         <img
-          
+          src="https://res.cloudinary.com/dnefyrorp/image/upload/v1748923496/Group_8005_ybh20q.png"
           alt="NXT Assess Logo"
           className="logo"
         />
-        <h2 className="title"><b>NXT</b> Assess</h2>
-
         <div className="input-group">
           <label>USERNAME</label>
           <input type="text" placeholder="rahul"  className='username' onChange={(e) => setUserDetails({ ...userDetails, username: e.target.value })}/>

@@ -6,7 +6,7 @@ import { UserContext } from '../../App';
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="null" alt="NXT Access Logo" />
+        <img src="https://res.cloudinary.com/dnefyrorp/image/upload/v1748944748/Group_8004_amvqw3.png" alt="NXT Access Logo" />
       </div>
       <button className="logout-btn" onClick={()=>setIsLoggedIn(false)}>Logout</button>
     </nav>

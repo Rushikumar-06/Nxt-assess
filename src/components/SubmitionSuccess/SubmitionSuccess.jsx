@@ -24,7 +24,7 @@ function SubmitionSuccess() {
     <div className="Submition-result-wrapper">
       <div className="Submition-result-card">
         <img
-          src="null"
+          src="https://res.cloudinary.com/dnefyrorp/image/upload/v1748923650/Asset_2_1_ven0hn.png"
           alt="Assessment Complete"
           className="Submition-result-image"
         />

@@ -9,8 +9,9 @@
 
 
 .navbar-logo img {
-  height: 30px;
+  height: 40px;
   width: auto;
+  color: #fff;
 }
 .logout-btn {
   background: transparent;

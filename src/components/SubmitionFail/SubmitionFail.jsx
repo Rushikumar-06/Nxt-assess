@@ -24,7 +24,7 @@ function SubmitionFail() {
     <div className="Submition-result-wrapper">
       <div className="Submition-result-card">
         <img
-          src="null"
+          src="https://res.cloudinary.com/dnefyrorp/image/upload/v1748944938/calender_1_1_n3yzs1.png"
           alt="Assessment Complete"
           className="Submition-result-image"
         />
